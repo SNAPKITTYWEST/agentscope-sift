@@ -37,12 +37,12 @@
 
 > Talk to SENTINEL — the zero-trust security agent that powers this system — directly.
 
-**[→ Open Chat](https://collectivekitty.com/chat?agent=risk&repo=SNAPKITTYWEST/agentscope-sift)**
+**[→ Open Chat](https://collectivekitty.com/labs/sentinel?repo=SNAPKITTYWEST/agentscope-sift)**
 
 Or embed in any page:
 ```html
 <iframe
-  src="https://collectivekitty.com/chat?embed=1&agent=risk&repo=SNAPKITTYWEST/agentscope-sift"
+  src="https://collectivekitty.com/labs/sentinel?embed=1&repo=SNAPKITTYWEST/agentscope-sift"
   width="100%" height="480" frameborder="0"
   style="border-radius:8px; border:1px solid #1a1a2e;">
 </iframe>
@@ -351,7 +351,7 @@ Every entry in `cases/worm-chain.jsonl`:
 
 SENTINEL is the zero-trust security agent that designed the trust boundaries in this system. Ask it anything — architecture decisions, threat models, how the WORM chain holds against specific attack vectors.
 
-**[→ Chat with SENTINEL](https://collectivekitty.com/chat?agent=risk&repo=SNAPKITTYWEST/agentscope-sift)**
+**[→ Chat with SENTINEL](https://collectivekitty.com/labs/sentinel?repo=SNAPKITTYWEST/agentscope-sift)**
 
 ---
 
