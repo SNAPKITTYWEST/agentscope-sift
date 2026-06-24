@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>AgentScope SIFT — Sovereign Forensic AI</title>
+<meta name="description" content="SIFT gives investigators tools. AgentScope gives the AI an evidence trail. No agent claims a finding unless it can PROVE which forensic tool produced it."/>
+<meta property="og:title" content="AgentScope SIFT"/>
+<meta property="og:description" content="Sovereign forensic AI with WORM-sealed evidence chains."/>
+<link rel="manifest" href="manifest.json"/>
+<meta name="theme-color" content="#00ff88"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#04040a;--bg1:#080810;--bg2:#0a0a14;--border:#1a1a28;
+  --text:#e0e0f0;--dim:#555;--green:#00ff88;--blue:#0a84ff;
+  --purple:#bf5af2;--red:#ff453a;--mono:'SF Mono',Monaco,Consolas,monospace
+}
+html,body{min-height:100%;background:var(--bg);color:var(--text);font-family:var(--mono)}
+a{color:inherit;text-decoration:none}
+
+/* hero */
+.hero{
+  max-width:960px;margin:0 auto;padding:80px 24px 60px;text-align:center
+}
+.mark{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:9px;letter-spacing:3px;color:var(--green);
+  border:1px solid var(--green)40;border-radius:4px;padding:4px 12px;margin-bottom:32px
+}
+h1{font-size:clamp(28px,5vw,52px);font-weight:700;letter-spacing:-1px;line-height:1.15;margin-bottom:18px}
+h1 span{color:var(--green)}
+.sub{font-size:15px;color:#666;line-height:1.7;max-width:580px;margin:0 auto 40px}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{
+  padding:12px 28px;background:var(--green);color:#000;
+  border-radius:8px;font-weight:700;font-size:13px;font-family:var(--mono)
+}
+.btn-ghost{
+  padding:12px 28px;border:1px solid var(--border);color:#888;
+  border-radius:8px;font-size:13px;font-family:var(--mono)
+}
+
+/* proof box */
+.proof{
+  max-width:640px;margin:0 auto 72px;
+  background:var(--bg1);border:1px solid var(--border);border-radius:10px;overflow:hidden
+}
+.proof-header{
+  background:var(--bg2);border-bottom:1px solid var(--border);
+  padding:10px 16px;display:flex;align-items:center;gap:8px
+}
+.dot{width:8px;height:8px;border-radius:50%}
+.proof-body{padding:16px;font-size:11px;color:var(--green);line-height:2;overflow-x:auto}
+.dim{color:var(--dim)}
+
+/* features */
+.features{max-width:960px;margin:0 auto;padding:0 24px 80px}
+.section-label{
+  font-size:9px;letter-spacing:3px;color:var(--dim);margin-bottom:24px;text-align:center
+}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{
+  background:var(--bg1);border:1px solid var(--border);border-radius:10px;padding:20px 22px
+}
+.card-icon{font-size:20px;margin-bottom:12px}
+.card-title{font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px;letter-spacing:0.5px}
+.card-desc{font-size:11px;color:#555;line-height:1.6}
+
+/* stack */
+.stack{max-width:760px;margin:0 auto;padding:0 24px 80px}
+.stack-row{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 0;border-bottom:1px solid var(--border)
+}
+.stack-num{font-size:9px;color:var(--dim);width:24px;flex-shrink:0}
+.stack-name{font-size:12px;color:var(--text);width:160px;flex-shrink:0}
+.stack-desc{font-size:11px;color:#555}
+.tag{
+  margin-left:auto;font-size:9px;padding:2px 8px;border-radius:3px;
+  flex-shrink:0
+}
+.tag-green{background:var(--green)15;color:var(--green);border:1px solid var(--green)25}
+.tag-purple{background:var(--purple)15;color:var(--purple);border:1px solid var(--purple)25}
+.tag-blue{background:var(--blue)15;color:var(--blue);border:1px solid var(--blue)25}
+
+/* footer */
+footer{
+  border-top:1px solid var(--border);padding:20px 24px;
+  text-align:center;font-size:10px;color:var(--dim)
+}
+footer a{color:var(--green)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="mark">⬡ SNAPKITTY SOVEREIGN OS · SECURITY LANE</div>
+  <h1>Investigators get tools.<br><span>The AI gets a proof trail.</span></h1>
+  <p class="sub">
+    AgentScope SIFT wraps every forensic finding in a WORM-sealed evidence chain.
+    No agent claims a result unless it can prove which tool produced it, signed with Ed25519, and timestamped on-chain.
+  </p>
+  <div class="ctas">
+    <a class="btn-primary" href="https://github.com/SNAPKITTYWEST/agentscope-sift" target="_blank">
+      View on GitHub
+    </a>
+    <a class="btn-ghost" href="https://collectivekitty.com/apps/agentscope-sift" target="_blank">
+      App Directory →
+    </a>
+  </div>
+</div>
+
+<!-- Live demo terminal -->
+<div class="proof" style="max-width:640px;margin:0 auto 72px">
+  <div class="proof-header">
+    <div class="dot" style="background:#ff453a"></div>
+    <div class="dot" style="background:#ffd60a"></div>
+    <div class="dot" style="background:#00ff88"></div>
+    <span style="font-size:10px;color:#555;margin-left:8px">agentscope-sift · demo run</span>
+  </div>
+  <div class="proof-body">
+<pre><span class="dim">[INIT]</span>  AgentScope SIFT v1.0.0
+<span class="dim">[SCAN]</span>  Loading 3 forensic pipelines...
+<span class="dim">[TOOL]</span>  <span style="color:#0a84ff">volatility3</span> → memory.dump
+<span class="dim">[TOOL]</span>  <span style="color:#0a84ff">plaso</span>      → timeline.csv
+<span class="dim">[TOOL]</span>  <span style="color:#0a84ff">yara</span>       → rules/malware.yar
+<span class="dim">[AGENT]</span> Hypothesis: lateral movement via RDP session hijack
+<span class="dim">[CHAIN]</span> Evidence sealed → <span style="color:#00ff88">0x7fa3...c291</span>
+<span class="dim">[LEAN4]</span> EvidenceChain.lean ✓ verified
+<span class="dim">[WORM]</span>  Block #441 · SHA-256 · Ed25519 signed
+<span class="dim">[DONE]</span>  Finding provable · chain intact</pre>
+  </div>
+</div>
+
+<!-- Features -->
+<div class="features">
+  <p class="section-label">WHAT IT DOES</p>
+  <div class="grid">
+    <div class="card">
+      <div class="card-icon">⛓</div>
+      <div class="card-title">WORM Evidence Chain</div>
+      <div class="card-desc">Every tool invocation appends to an append-only SHA-256 chain. The agent cannot modify history, only extend it.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">∴</div>
+      <div class="card-title">Lean 4 Verification</div>
+      <div class="card-desc">Critical deductions are machine-verified in Lean 4 before the agent is allowed to claim a finding as proven.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔍</div>
+      <div class="card-title">Tool Scope Enforcement</div>
+      <div class="card-desc">Each forensic tool is scoped to its declared domain. Volatility, Plaso, YARA — every invocation is logged and bounded.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <div class="card-title">MCP Native</div>
+      <div class="card-desc">Runs as a Model Context Protocol server. Drop into any MCP-compatible AI shell — Claude, Cursor, OpenAI Assistants.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔐</div>
+      <div class="card-title">Ed25519 Signing</div>
+      <div class="card-desc">Each sealed block is signed with Ed25519. The trust deed is published, the key is auditable.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">◈</div>
+      <div class="card-title">Prolog Trust Rules</div>
+      <div class="card-desc">Trust.pl contains the inference engine. Add your own rules — who can see which evidence, under what conditions.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Stack -->
+<div class="stack">
+  <p class="section-label">TECH STACK</p>
+  <div class="stack-row">
+    <span class="stack-num">01</span>
+    <span class="stack-name">Node.js 18+</span>
+    <span class="stack-desc">Runtime, MCP transport, tool orchestration</span>
+    <span class="tag tag-green">runtime</span>
+  </div>
+  <div class="stack-row">
+    <span class="stack-num">02</span>
+    <span class="stack-name">Lean 4</span>
+    <span class="stack-desc">Formal proof verification of evidence chains</span>
+    <span class="tag tag-purple">proof</span>
+  </div>
+  <div class="stack-row">
+    <span class="stack-num">03</span>
+    <span class="stack-name">Prolog</span>
+    <span class="stack-desc">Trust rule inference engine (trust.pl)</span>
+    <span class="tag tag-blue">logic</span>
+  </div>
+  <div class="stack-row">
+    <span class="stack-num">04</span>
+    <span class="stack-name">WORM Chain</span>
+    <span class="stack-desc">SHA-256 append-only sealed ledger (JSONL)</span>
+    <span class="tag tag-green">sovereign</span>
+  </div>
+  <div class="stack-row">
+    <span class="stack-num">05</span>
+    <span class="stack-name">Ed25519</span>
+    <span class="stack-desc">Block signing via libsodium / Node:crypto</span>
+    <span class="tag tag-purple">crypto</span>
+  </div>
+  <div class="stack-row">
+    <span class="stack-num">06</span>
+    <span class="stack-name">MCP</span>
+    <span class="stack-desc">Model Context Protocol transport layer</span>
+    <span class="tag tag-blue">protocol</span>
+  </div>
+</div>
+
+<footer>
+  Built by <a href="https://collectivekitty.com" target="_blank">SnapKitty Sovereign OS</a> ·
+  <a href="https://github.com/SNAPKITTYWEST/agentscope-sift" target="_blank">GitHub</a> ·
+  MIT License
+</footer>
+
+</body>
+</html>
