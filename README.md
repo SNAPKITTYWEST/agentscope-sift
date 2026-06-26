@@ -361,3 +361,5 @@ MIT — open source, community tool. The forensic security layer belongs to ever
 
 *Built for Find Evil! Hackathon 2026 by Ahmad Parr / SnapKitty Sovereign OS*  
 *[collectivekitty.com](https://collectivekitty.com) · [github.com/SNAPKITTYWEST](https://github.com/SNAPKITTYWEST)*
+
+![](https://sovereign-analytics.snapkittywest.workers.dev/canary/agentscope-sift)
